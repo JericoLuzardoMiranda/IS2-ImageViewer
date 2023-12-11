@@ -1,6 +1,7 @@
-package software.ulpgc.ImageViewer;
+package software.ulpgc.ImageViewer.presenter;
 
-import java.awt.*;
+import software.ulpgc.ImageViewer.presenter.Command;
+import software.ulpgc.ImageViewer.presenter.ImageDisplay;
 
 public class PreviousImageCommand implements Command {
     private final ImageDisplay imageDisplay;
@@ -13,5 +14,4 @@ public class PreviousImageCommand implements Command {
     public void execute() {
         imageDisplay.show(imageDisplay.image().prev());
     }
-
 }

@@ -5,22 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62a5c2a9-9c65-4815-a3f8-c5c87c2cca92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/FileImageLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/ImageDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/ImageLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/MainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/NextImageCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/PreviousImageCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/SwingImageDisplay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/view/SwingImageDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/presenter/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/FileImageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/model/FileImageLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/model/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/ImageDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/presenter/ImageDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/ImageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/presenter/ImageLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/presenter/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/view/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/NextImageCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/presenter/NextImageCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/PreviousImageCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/presenter/PreviousImageCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/SwingImageDisplay.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +35,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -53,7 +53,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/jeric/IdeaProjects/ImageViewer"
+    "last_opened_file_path": "C:/Users/jeric/OneDrive/Escritorio/IS2-MoneyCalculator"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -63,11 +63,11 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="software.ulpgc.ImageViewer.Main" />
+      <option name="MAIN_CLASS_NAME" value="software.ulpgc.ImageViewer.presenter.Main" />
       <module name="ImageViewer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="software.ulpgc.ImageViewer.*" />
+          <option name="PATTERN" value="software.ulpgc.ImageViewer.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

@@ -1,4 +1,7 @@
-package software.ulpgc.ImageViewer;
+package software.ulpgc.ImageViewer.view;
+
+import software.ulpgc.ImageViewer.presenter.Command;
+import software.ulpgc.ImageViewer.presenter.ImageDisplay;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,7 +12,6 @@ public class MainFrame extends JFrame {
     private ImageDisplay imageDisplay;
     private final Map<String, Command> commands;
 
-
     public MainFrame() {
         this.commands = new HashMap<>();
         setTitle("Image Viewer");
@@ -17,20 +19,25 @@ public class MainFrame extends JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
         add(createImageDisplay());
         add(createToolbar(), BorderLayout.SOUTH);
     }
 
     private Component createToolbar() {
         JPanel panel = new JPanel();
-        panel.add(createButton("<"));
-        panel.add(createButton(">"));
+        panel.add(createArrowButton("◄"));
+        panel.add(createArrowButton("►"));
         return panel;
     }
 
-    private Component createButton(String label) {
+    private Component createArrowButton(String label) {
         JButton button = new JButton(label);
-        button.addActionListener(e -> commands.get(label).execute());
+        button.setFont(new Font("Arial", Font.PLAIN, 18));
+        button.addActionListener(e -> {
+            if ("◄".equals(label)) { commands.get("<").execute(); }
+            else if ("►".equals(label)) { commands.get(">").execute(); }
+        });
         return button;
     }
 

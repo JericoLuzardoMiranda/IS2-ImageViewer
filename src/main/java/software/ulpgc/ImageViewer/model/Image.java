@@ -1,4 +1,4 @@
-package software.ulpgc.ImageViewer;
+package software.ulpgc.ImageViewer.model;
 
 public interface Image {
     String name();

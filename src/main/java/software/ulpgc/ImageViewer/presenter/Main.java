@@ -1,9 +1,13 @@
-package software.ulpgc.ImageViewer;
+package software.ulpgc.ImageViewer.presenter;
+
+import software.ulpgc.ImageViewer.model.FileImageLoader;
+import software.ulpgc.ImageViewer.model.Image;
+import software.ulpgc.ImageViewer.view.MainFrame;
 
 import java.io.File;
 
 public class Main {
-    private static final String ROOT_DIRECTORY = "C:/Users/jeric/IdeaProjects/ImageViewer/pictures";
+    private static final String ROOT_DIRECTORY = "C:/Users/jeric/IdeaProjects/IS2-ImageViewer/pictures";
 
     public static void main(String[] args) {
         MainFrame frame = new MainFrame();
@@ -17,5 +21,6 @@ public class Main {
         } else {
             System.out.println("No image files found in the specified directory.");
         }
+
     }
 }

@@ -1,4 +1,6 @@
-package software.ulpgc.ImageViewer;
+package software.ulpgc.ImageViewer.model;
+
+import software.ulpgc.ImageViewer.presenter.ImageLoader;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -7,13 +9,12 @@ import java.util.Set;
 public class FileImageLoader implements ImageLoader {
     private final File[] files;
     private int currentIndex;
+    private static final Set<String> imageExtensions = Set.of(".jpg", ".png");
 
     public FileImageLoader(File folder) {
         this.files = folder.listFiles(isImage());
         this.currentIndex = 0;
     }
-
-    private static final Set<String> imageExtensions = Set.of(".jpg", ".png");
 
     private static FilenameFilter isImage() {
         return (dir, name) -> imageExtensions.stream().anyMatch(name::endsWith);
