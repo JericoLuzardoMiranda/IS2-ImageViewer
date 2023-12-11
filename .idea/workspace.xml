@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62a5c2a9-9c65-4815-a3f8-c5c87c2cca92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/view/SwingImageDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/presenter/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/FileImageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/model/FileImageLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/model/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/ImageDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/presenter/ImageDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/ImageLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/presenter/ImageLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/presenter/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/view/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/NextImageCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/presenter/NextImageCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/PreviousImageCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/presenter/PreviousImageCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/ImageViewer/SwingImageDisplay.java" beforeDir="false" />
-    </list>
+    <list default="true" id="62a5c2a9-9c65-4815-a3f8-c5c87c2cca92" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
