@@ -3,12 +3,12 @@ package software.ulpgc.ImageViewer.view;
 import software.ulpgc.ImageViewer.presenter.ImageDisplay;
 import software.ulpgc.ImageViewer.model.Image;
 
-import javax.imageio.ImageIO;
-import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import javax.imageio.ImageIO;
+import javax.swing.JPanel;
 
 public class SwingImageDisplay extends JPanel implements ImageDisplay {
     private Image image;
@@ -32,43 +32,20 @@ public class SwingImageDisplay extends JPanel implements ImageDisplay {
         g.fillRect(0, 0, this.getWidth(), this.getHeight());
 
         if (bitmap != null) {
-            Resizer resizer = new Resizer(new Dimension(this.getWidth(), this.getHeight()));
-            Dimension resized = resizer.resize(new Dimension(bitmap.getWidth(), bitmap.getHeight()));
+            Dimension panelSize = getSize();
 
-            int x = (this.getWidth() - resized.width) / 2;
-            int y = (this.getHeight() - resized.height) / 2;
+            double widthRatio = (double) panelSize.width / bitmap.getWidth();
+            double heightRatio = (double) panelSize.height / bitmap.getHeight();
 
-            g.drawImage(bitmap, x, y, resized.width, resized.height, null);
-        }
-    }
+            double scaleFactor = Math.max(widthRatio, heightRatio);
 
-    public static class Resizer {
-        private final Dimension dimension;
+            int newWidth = (int) (bitmap.getWidth() * scaleFactor);
+            int newHeight = (int) (bitmap.getHeight() * scaleFactor);
 
-        public Resizer(Dimension dimension) {
-            this.dimension = dimension;
-        }
+            int x = (panelSize.width - newWidth) / 2;
+            int y = (panelSize.height - newHeight) / 2;
 
-        public Dimension resize(Dimension original) {
-            int originalWidth = original.width;
-            int originalHeight = original.height;
-            int maxWidth = dimension.width;
-            int maxHeight = dimension.height;
-
-            int newWidth = originalWidth;
-            int newHeight = originalHeight;
-
-            if (originalWidth > maxWidth) {
-                newWidth = maxWidth;
-                newHeight = (newWidth * originalHeight) / originalWidth;
-            }
-
-            if (newHeight > maxHeight) {
-                newHeight = maxHeight;
-                newWidth = (newHeight * originalWidth) / originalHeight;
-            }
-
-            return new Dimension(newWidth, newHeight);
+            g.drawImage(bitmap, x, y, newWidth, newHeight, null);
         }
     }
 
@@ -79,5 +56,4 @@ public class SwingImageDisplay extends JPanel implements ImageDisplay {
             throw new RuntimeException(e);
         }
     }
-
 }
